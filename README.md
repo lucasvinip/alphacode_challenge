@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
   <h1>AlphaCode</h1>
 </div>
@@ -45,3 +46,6 @@
     <li>Execute o backend localmente com o comando `php -S localhost:8080`.</li>
   </ol>
 </div>
+=======
+
+>>>>>>> a32a90f3047d2b3fd6ed0f9ad0811d145c6cf494
