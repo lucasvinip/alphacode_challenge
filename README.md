@@ -46,6 +46,13 @@
   </ol>
 </div>
 
+<div>
+  <h2>Observações </h2>
+  <p>Se você encontrar problemas de carregamento de CSS, verifique se as rotas estão configuradas corretamente. Às vezes, é necessário ajustar as referências de arquivo no seu código HTML ou verificar se os caminhos estão corretos.</p>
+  <p>Exemplo: <code>rel="stylesheet" href="/public/assets/img/logo_alphacode.png"></code> se estiver dando erro, favor mudar para: <code>rel="stylesheet" href="/frontend/public/assets/img/logo_alphacode.png"></code>. Talvez seja necessário ajustar também no script do JavaScript se houver referências de arquivos.</p>
+</div>
+
+
  
 |NOME                                                                                                                                                                                   |                                               GITHUB                                               |                                       FOTO                                        |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
