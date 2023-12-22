@@ -1,0 +1,107 @@
+/* Adicione ao seu arquivo CSS ou no estilo embutido */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(147, 177, 195, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.modal_content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.close {
+    color: var(--third-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.modal_header{
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+}
+.modal_content img{
+    height: 80px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#editForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.container_input label {
+    color: var(--second-color);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.container_input input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--second-color);
+}
+
+.container_input input:focus {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.buttonsEdit{
+    display: flex;
+    height: auto;
+    width: 75%;
+    justify-content: space-around;
+}
+
+#editSubmit{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 40%;
+    border-radius: 5px;
+    background-color: var(--third-color);
+    
+}
+
+#cancelSubmit{
+    height: 30px;
+    width: 40%;
+    border-radius: 5px;
+    background-color: var(--second-color);
+}
+
+.buttonsEdit h1{
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+
+}
+

@@ -1,0 +1,90 @@
+.sign_up {
+    display: flex;
+    padding: 20px;
+}
+
+.container_main{
+    width: 100%;
+    align-items: center;
+}
+
+.container_main div{
+    display: flex;
+}
+
+.container_input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.container_input label{
+    display: block;
+    margin-bottom: 5px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+
+.container_input input{
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--second-color);
+}
+.required-text:hover::after {
+    content: "Campo obrigatório";
+    position: absolute;
+    background: rgb(234, 144, 144);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    z-index: 1;
+    height: 6%;
+    width: 11%;
+}
+
+.container_input:focus-within label {
+    color: var(--primary-color);
+}
+.container_input:focus-within input {
+    border-bottom: 2px solid var(--primary-color);
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.toggle {
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.form-check {
+    margin-bottom: 15px;
+    
+}
+
+.toggle label {
+    color: black;
+}
+
+.container_button{
+    display: flex;
+    justify-content: flex-end;
+    width: 98%;
+}
+
+.container_button button{
+    width: 15%;
+    height: auto;
+    border-radius: 5px;
+    background-color: var(--third-color);
+}
+
+.container_button h1{
+    font-size: 1rem;
+    padding-top: 2px;
+    color: white;
+}

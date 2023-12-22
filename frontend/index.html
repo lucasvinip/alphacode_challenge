@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/header_content.css">
+    <link rel="stylesheet" href="/public/css/sign_up.css">
+    <link rel="stylesheet" href="/public/css/modalEdit.css">
+    <link rel="stylesheet" href="/public/css/table_users.css">
+    <link rel="stylesheet" href="/public/css/footer_content.css">
+
+    <link rel="shortcut icon" href="/public/assets/img/logo_alphacode.png" type="image/x-icon" />
+
+    <title>Alphacode</title>
+</head>
+
+<body>
+    <script defer type="module" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer type="module" src="/src/index.js"></script>
+    <header>
+        <div>
+            <img src="/public/assets/img/logo_alphacode.png" alt="logo_alphacode">
+            <h1>
+                Cadastro de Contatos
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section class="sign_up" id="sign_up">
+            <div class="container_main">
+                <div>
+                    <div class="container_input">
+                        <label class="required-text">*Nome Completo:</label>
+                        <input id="name" placeholder="Ex.: Letícia Pacheco dos Santos">
+                    </div>
+                    <div class="container_input">
+                        <label class="required-text">*Data de Nascimento:</label>
+                        <input id="date_of_birth" type="date" placeholder="Ex.: 03/10/2003">
+                    </div>
+                </div>
+                <div>
+                    <div class="container_input">
+                        <label class="required-text">*Email:</label>
+                        <input id="email" type="email" placeholder="Ex.: leticia@gmail.com">
+                    </div>
+                    <div class="container_input">
+                        <label>Profissão:</label>
+                        <input id="occupation" placeholder="Ex.: Desenvolvedora Web">
+                    </div>
+                </div>
+                <div>
+                    <div class="container_input">
+                        <label>Telefone para Contato:</label>
+                        <input id="contact_phone" type="number" placeholder="Ex.: 1140332019">
+                    </div>
+                    <div class="container_input">
+                        <label class="required-text">*Celular para Contato:</label>
+                        <input id="contact_cellphone" type="number" placeholder="Ex.: 11975936195">
+                    </div>
+                </div>
+                <div class="toggle">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="whatsappCheckbox">
+                        <label class="form-check-label" for="whatsappCheckbox">
+                            Número de celular possui Whatsapp
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="emailCheckbox" checked>
+                        <label class="form-check-label" for="emailCheckbox">
+                            Enviar notificações por E-mail
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="smsCheckbox" checked>
+                        <label class="form-check-label" for="smsCheckbox">
+                            Enviar notificações por SMS
+                        </label>
+                    </div>
+                </div>
+                <div class="container_button">
+                    <button>
+                        <h1>
+                            Cadastrar contato
+                        </h1>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="table_users" id="table_users">
+            <div id="editModal" class="modal">
+                <div class="modal_content">
+                    <div>
+                        <button class="close" id="closeEditModal">&times;</button>
+                    </div>
+                    <div class="modal_header">
+                        <img src="/public/assets/img/logo_alphacode.png" alt="logo_alphacode">
+                        <h2>Editar Usuário</h2>
+                    </div>
+                    <form id="editForm">
+                        <div class="container_input">
+                            <label for="editName">Nome Completo:</label>
+                            <input type="text" id="editName" name="editName"
+                                placeholder="Ex.: Letícia Pacheco dos Santos">
+                        </div>
+                        <div class="container_input">
+                            <label for="editDateOfBirth">Data de Nascimento:</label>
+                            <input type="date" id="editDateOfBirth" name="editDateOfBirth"
+                                placeholder="Ex.: 03/10/2003">
+                        </div>
+                        <div class="container_input">
+                            <label for="editEmail">Email:</label>
+                            <input type="email" id="editEmail" name="editEmail" placeholder="Ex.: leticia@gmail.com">
+                        </div>
+
+                        <div class="container_input">
+                            <label for="editContactCellphone">Celular para Contato:</label>
+                            <input type="number" id="editContactCellphone" name="editContactCellphone"
+                                placeholder="Ex.: 11975936195">
+                        </div>
+                        <div class="buttonsEdit">
+                            <button id="editSubmit">
+                                <h1>
+                                    Salvar Alterações
+                                </h1>
+                            </button>
+                            <button id="cancelSubmit" id="closeEditModal">
+                                <h1>
+                                    Cancelar Alterações
+                                </h1> 
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                        <th>Email</th>
+                        <th>Celular para Contato</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="container_footer">
+            <h1>
+                Termos | Políticas
+            </h1>
+            <div>
+                <h1>
+                    © Copyright 2022 | Desenvolvido por
+                </h1>
+                <img src="public/assets/img/logo_rodape_alphacode.png" alt="logo_footer_alphacode">
+            </div>
+            <h1>
+                ©Alphacode IT Solutions 2022
+            </h1>
+        </div>
+    </footer>
+</body>
+
+</html>

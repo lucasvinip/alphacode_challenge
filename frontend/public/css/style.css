@@ -1,0 +1,53 @@
+:root{
+    --primary-color: #0097fc;
+    --second-color:  rgb(204, 199, 199);
+    --third-color: #68b4eb;
+
+}
+
+body {
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    color: white;
+}
+
+header {
+    grid-area: header;
+    height: auto;
+    display: flex;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+main {
+    grid-area: main;
+}
+.line{
+    height: 2.5px;
+    width: 100%;  
+    background-color: #8c8b8b; 
+}
+section{
+    height: auto;
+}
+
+button{
+    border: none;
+
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: 15vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+}

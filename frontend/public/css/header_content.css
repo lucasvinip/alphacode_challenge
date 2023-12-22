@@ -1,0 +1,9 @@
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header div h1{
+    font-size: 2rem;
+}
+
