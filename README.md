@@ -32,7 +32,7 @@
 
 <div>
   <h2>Uso do jQuery e Bootstrap</h2>
-  <p>O AlphaCode utiliza o jQuery para aprimorar interações dinâmicas nos inputs e botões, enquanto o Bootstrap é empregado para criar toggle buttons e aprimorar a aparência do layout.</p>
+  <p>O Projeto AlphaCode utiliza o jQuery para aprimorar interações dinâmicas nos inputs e botões, enquanto o Bootstrap é empregado para criar toggle buttons e aprimorar a aparência do layout.</p>
 </div>
 
 <div>
