@@ -27,7 +27,7 @@ export const isValidEmailFormat = (email) => {
     return regex.test(email);
 }
 
-export const validations = (name, date_of_birth, email, contact_cellphone, contact_phone, occupation) => {
+export const validations = (name, date_of_birth, email, contact_cellphone, occupation) => {
     if (!name || !date_of_birth || !email || !contact_cellphone) {
         alert(phasesApp.Please_Required_Fields);
         return null;
@@ -39,10 +39,6 @@ export const validations = (name, date_of_birth, email, contact_cellphone, conta
         return null;
     }
 
-    if(!isValidPhoneNumber(contact_phone)){
-        alert(phasesApp.Please_Phone_Validade);
-        return null;
-    }
     else if(!isValidPhoneNumber(contact_cellphone)){
         alert(phasesApp.Please_Cell_Phone);
         return null;

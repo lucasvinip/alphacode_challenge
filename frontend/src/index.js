@@ -78,7 +78,7 @@ function handleInputsJsonPost() {
     const occupation = $('#occupation').val();
     const contact_cellphone = $('#contact_cellphone').val();
 
-    validations(name, date_of_birth, email, contact_cellphone, contact_phone, occupation)
+    validations(name, date_of_birth, email, contact_cellphone, occupation)
 
     const json = {
         name: name,
