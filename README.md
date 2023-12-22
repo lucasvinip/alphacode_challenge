@@ -42,9 +42,14 @@
     <li>Clone este repositório.</li>
     <li>Configure o ambiente com as tecnologias mencionadas.</li>
     <li>Verifique as credenciais do banco de dados no arquivo de conexão.</li>
-    <li>Execute o backend localmente com o comando `php -S localhost:8080`.</li>
+    <ul>
+      <li>As credenciais do banco de dados estão localizadas no arquivo <code>backend/app/DAO/UserDAO.php</code>.</li>
+      <li>Verifique se as informações de <code>dbHost</code>, <code>dbUserName</code>, <code>dbPassword</code> e <code>dbName</code> estão corretas.</li>
+    </ul>
+    <li>Execute o backend localmente com o comando <code>php -S localhost:8080</code>.</li>
   </ol>
 </div>
+
 
 <div>
   <h2>Observações </h2>
