@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div align="center">
   <h1>AlphaCode</h1>
 </div>
@@ -46,6 +45,7 @@
     <li>Execute o backend localmente com o comando `php -S localhost:8080`.</li>
   </ol>
 </div>
-=======
+|NOME                                                                                                                                                                                   |                                               GITHUB                                               |                                       FOTO                                        |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
+| <a href="https://github.com/lucasvinip"><img src="https://img.shields.io/badge/DESENVOLVEDOR-LUCAS%20VINICIUS%20SILVA-informational?style=for-the-badge&logo=appveyorlabelColor=222222"></a> |   <a href="https://github.com/lucasvinip"><img src="https://skillicons.dev/icons?i=github&theme="/></a>   | <img src="https://avatars.githubusercontent.com/u/110206119?v=4" height="50"></a> | 
 
->>>>>>> a32a90f3047d2b3fd6ed0f9ad0811d145c6cf494
