@@ -31,34 +31,10 @@
 </div>
 
 <div>
-  <h2>Uso do jQuery e Bootstrap</h2>
+  <h2>Uso do Redux Toolkit</h2>
   <p>O Projeto AlphaCode utiliza o jQuery para aprimorar interações dinâmicas nos inputs e botões, enquanto o Bootstrap é empregado para criar toggle buttons e aprimorar a aparência do layout.</p>
 </div>
 
-<div>
-  <h2>Instalação</h2>
-  <p>Siga as etapas abaixo para executar o projeto localmente:</p>
-  <ol>
-    <li>Clone este repositório.</li>
-    <li>Configure o ambiente com as tecnologias mencionadas.</li>
-    <li>Verifique as credenciais do banco de dados no arquivo de conexão.</li>
-    <ul>
-      <li>As credenciais do banco de dados estão localizadas no arquivo <code>backend/app/DAO/UserDAO.php</code>.</li>
-      <li>Verifique se as informações de <code>dbHost</code>, <code>dbUserName</code>, <code>dbPassword</code> e <code>dbName</code> estão corretas.</li>
-    </ul>
-    <li>Execute o backend localmente com o comando <code>php -S localhost:8080</code>.</li>
-  </ol>
-</div>
-
-
-<div>
-  <h2>Observações </h2>
-  <p>Se você encontrar problemas de carregamento de CSS, verifique se as rotas estão configuradas corretamente. Às vezes, é necessário ajustar as referências de arquivo no seu código HTML ou verificar se os caminhos estão corretos.</p>
-  <p>Exemplo: <code>rel="stylesheet" href="/public/assets/img/logo_alphacode.png"></code> se estiver dando erro, favor mudar para: <code>rel="stylesheet" href="/frontend/public/assets/img/logo_alphacode.png"></code>. Talvez seja necessário ajustar também no script do JavaScript se houver referências de arquivos.</p>
-</div>
-
-
- 
 |NOME                                                                                                                                                                                   |                                               GITHUB                                               |                                       FOTO                                        |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
 | <a href="https://github.com/lucasvinip"><img src="https://img.shields.io/badge/DESENVOLVEDOR-LUCAS%20VINICIUS%20SILVA-informational?style=for-the-badge&logo=appveyorlabelColor=222222"></a> |   <a href="https://github.com/lucasvinip"><img src="https://skillicons.dev/icons?i=github&theme="/></a>   | <img src="https://avatars.githubusercontent.com/u/110206119?v=4" height="50"></a> | 
